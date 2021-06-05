@@ -10,9 +10,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
 <h2>Moon Sage</h2>
 <table>
   <tr>
-    <td>Description</td>
+    <td>Unlock Requirement</td>
     <td>
-      There are several distinct orders of mages in the world. Moon Sages are such an order known for worshipping a goddess of the night sky. It is not known whether this order legitimately derives power from the moon, but their ability to conceal the movements of allies in combat is unquestionably valuable.
+      Any Mage that levels up at night time will unlock this hidden class.
     </td>
   </tr>
   <tr>
@@ -26,19 +26,19 @@ The mod is designed to work with existing save files. Create a backup of your sa
     </td>
   </tr>
   <tr>
-    <td>Unlock Requirement</td>
+    <td>Description</td>
     <td>
-      Any Mage that levels up at night time will unlock this hidden class.
+      There are several distinct orders of mages in the world. Moon Sages are such an order known for worshipping a goddess of the night sky. It is not known whether this order legitimately derives power from the moon, but their ability to conceal the movements of allies in combat is unquestionably valuable.
     </td>
   </tr>
 </table>
 
 <h2>Bishop</h2>
 <table>
-  <tr>
-    <td>Description</td>
-    <td>
-      The most experienced and battle-hardened of Clerics are eventually ordained to become Bishops.
+    <tr>
+    <td>Unlock Requirement</td>
+    <td> 
+      Unlock the Cleric class first then acquire the Bishop card from the Cleric's deck.<br/></br>If you have characters that have Cleric unlocked already, the Bishop card will appear as received despite never encountering it. This mod will automatically unlock the Bishop class for any characters where this is the case.
     </td>
   </tr>
   <tr>
@@ -52,9 +52,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
     </td>
   </tr>
   <tr>
-    <td>Unlock Requirement</td>
+    <td>Description</td>
     <td>
-      Unlock the Cleric class and acquire the Bishop card from the Cleric deck. If you have characters that have Cleric already unlocked, the Bishop card can appear as received. This mod will automatically unlock the Bishop class for any characters where this is the case.
+      The most experienced and battle-hardened of Clerics are eventually ordained to become Bishops.
     </td>
   </tr>
 </table>
@@ -62,9 +62,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
 <h2>Scholar</h2>
 <table>
   <tr>
-    <td>Description</td>
+    <td>Unlock Requirement</td>
     <td>
-      Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and the pursuit of knowledge as Scholars. In addition to healing allies, Scholars use their extensive knowledge in history and military strategy to buff allies and debuff enemies.
+      Any character that masters the Student class unlocks this hidden class.
     </td>
   </tr>
   <tr>
@@ -78,9 +78,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
     </td>
   </tr>
   <tr>
-    <td>Unlock Requirement</td>
+    <td>Description</td>
     <td>
-      Any character that masters the Student class unlocks this hidden class.
+      Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and the pursuit of knowledge as Scholars. In addition to healing allies, Scholars use their extensive knowledge in history and military strategy to buff allies and debuff enemies.
     </td>
   </tr>
 </table>
@@ -88,9 +88,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
 <h2>Mercenary</h2>
 <table>
   <tr>
-    <td>Description</td>
+    <td>Unlock Requirement</td>
     <td>
-      Adventurers who enjoy front-line fighting will sometimes go on to make a name for themselves as Mercenaries for hire. The only thing better than seeking a life of adventure is getting paid to seek a life of adventure.
+      Any character that masters the Adventurer class unlocks this hidden class.
     </td>
   </tr>
   <tr>
@@ -104,9 +104,9 @@ The mod is designed to work with existing save files. Create a backup of your sa
     </td>
   </tr>
   <tr>
-    <td>Unlock Requirement</td>
+    <td>Description</td>
     <td>
-      Any character that masters the Adventurer class unlocks this hidden class.
+      Adventurers who enjoy front-line fighting will sometimes go on to make a name for themselves as Mercenaries for hire. The only thing better than seeking a life of adventure is getting paid to seek a life of adventure.
     </td>
   </tr>
 </table>
