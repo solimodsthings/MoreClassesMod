@@ -98,7 +98,7 @@ This mod relies on Events Mod and is compatible with other mods that use Events 
 Because this mod uses Events Mod, it is not compatible with other mods that replace the game’s player controller. 
 
 # How do I install this mod?
-1.  Download the mod files to your PC
+1.  [Download the mod files from the releases page](https://github.com/solimodsthings/MoreClassesMod/releases) to your PC
 1.	Open your Himeko Sutori steam folder by right-clicking on the game in Steam and choosing Manage > Browser Local Files.
 2.	Place files <i>EventsMod.u</i> and <i>MoreClassesMod.u</i> in folder <b>…/Himeko Sutori/RPGTacGame/Script/</b>
 3.	Place file <i>MoreClassesModContent.upk</i> in folder <b>…/Himeko Sutori/RPGTacGame/Content/</b>
