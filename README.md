@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/Z3mHRQO.png)
 
 # Overview
-This is a mod for [Himeko Sutori](https://himekosutori.com/) that adds new unlockable character classes abilities to the base game. It is built using the game’s new mutator loader and does not make modifications to base content files. 
+This is a mod for [Himeko Sutori](https://himekosutori.com/) that adds new unlockable character classes and class abilities to the base game. It is built using the game’s new mutator loader and does not make modifications to base content files. 
 
 The mod is designed to work with existing save files. Create a backup of your save file if you choose to use this mod in the middle of an existing campaign. 
 
