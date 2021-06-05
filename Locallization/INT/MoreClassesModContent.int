@@ -1,0 +1,139 @@
+; ------ More Classes Mod for Himeko Sutori ------
+
+
+; ------ Classes ------
+
+[CharacterClasses.CharacterClass_Bishop RPGTacCharacterClass]
+ClassName_Localized="Bishop"
+ClassDescription_Localized="The most experienced and battle-hardened of Clerics are eventually ordained to become Bishops."
+MasterLocalized="Master"
+
+[CharacterClasses.CharacterClass_MoonSage RPGTacCharacterClass]
+ClassName_Localized="Moon Sage"
+ClassDescription_Localized="There are several distinct orders of mages in the world. Moon Sages are such an order known for worshipping a goddess of the night sky. It is not known whether this order legitimately derives power from the moon, but their value in combat is unquestionable.\n\n(This hidden class is unlocked when a Mage gains a level-up at night time.)"
+MasterLocalized="Master"
+
+[CharacterClasses.CharacterClass_Scholar RPGTacCharacterClass]
+ClassName_Localized="Scholar"
+ClassDescription_Localized="Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and the pursuit of knowledge as Scholars. In addition to healing allies, Scholars use their extensive knowledge in history and military strategy to buff allies and debuff enemies.\n\n(This hidden class is unlocked once the Student class is mastered.)"
+MasterLocalized="Master"
+
+[CharacterClasses.CharacterClass_Mercenary RPGTacCharacterClass]
+ClassName_Localized="Mercenary"
+ClassDescription_Localized="Adventurers who enjoy front-line fighting will sometimes go on to make a name for themselves as Mercenaries for hire. The only thing better than seeking a life of adventure is getting paid to seek a life of adventure.\n\n(This hidden class is unlocked once the Adventurer class is mastered.)"
+MasterLocalized="Master"
+
+
+; ------ Cards  ------
+
+[LevelUpCards.Card_Class_Bishop RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Bishop"
+CardDescription_Localized="The most experienced and battle-hardened of Clerics are eventually ordained to become Bishops."
+ToolTipText_Localized="Unlocks Bishop class"
+
+[LevelUpCards.Card_Leadership_Clerics RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Empowering Faith"
+CardDescription_Localized="Bestows a leadership bonus to Clerics in the lance when this hero is lance captain."
+ToolTipText_Localized="Bestows a leadership bonus to any Clerics in the lance when this character is in command."
+
+[LevelUpCards.Card_Leadership_Veterans RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Veteran Tactics"
+CardDescription_Localized="Bestows a leadership bonus to Mercenaries in the lance when this hero is lance captain."
+ToolTipText_Localized="Bestows a leadership bonus to any Mercenaries in the lance when this character is in command."
+
+[LevelUpCards.Card_Reaction_ExamineWeakness RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Examine Weakness"
+CardDescription_Localized="Gives your hero the ability to identify weaknesses in enemy strategy during the heat of battle. Examined enemies have reduced physical and magical defenses."
+ToolTipText_Localized="Identifies weaknesses in enemy strategy during the heat of battle. Examined enemies have reduced physical and magical defenses."
+
+[LevelUpCards.Card_Reaction_Salvation RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Salvation"
+CardDescription_Localized="Teaches your hero the reaction Salvation which greatly heals an ally who takes damage."
+ToolTipText_Localized="Greatly heals an ally who takes damage."
+
+[LevelUpCards.Card_Reaction_Fortify RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Fortify"
+CardDescription_Localized="Teaches your hero the reaction Fortify which raises physical defenses during the heat of battle."
+ToolTipText_Localized="Raises physical defenses during the heat of battle."
+
+[LevelUpCards.Card_Reaction_StrategicInsights RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Strategic Insights"
+CardDescription_Localized="Teaches your hero the reaction Strategic Insights, which grants Advised status to allies. Advised allies have increased critical chance, block, and dodge."
+ToolTipText_Localized="Advises allies on an effective battle strategy. Advised allies have increased critical chance, block, and dodge."
+
+[LevelUpCards.Card_Reaction_VoidSky RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Void Sky"
+CardDescription_Localized="Teaches your hero the reaction Void Sky which inflicts Voidshock to groups of enemies. Voidshocked enemies have reduced critical chance and magical defense."
+ToolTipText_Localized="Inflicts Voidshock to groups of enemies. Voidshocked enemies have reduced critical chance and magical defense."
+
+[LevelUpCards.Card_Reaction_ConcealingDarkness RPGTacCharacterClass_LevelUpCard]
+CardName_Localized="Reaction: Concealing Darkness"
+CardDescription_Localized="Teaches your hero the reaction Concealing Darkness which grants Concealed status to allies. Concealed allies have greatly increased dodge."
+ToolTipText_Localized="Grants Concealed status to an ally. Concealed allies have greatly increased dodge."
+
+; ------ Actions ------
+
+[Actions.Act_BoldStrike RPGTacAction]
+ActionName_Localized="Bold Strike"
+
+[Actions.Act_EtherealBlade RPGTacAction]
+ActionName_Localized="Ethereal Blade"
+
+[Actions.Act_GreaterSalve RPGTacAction]
+ActionName_Localized="Greater Salve"
+
+[Actions.Act_LunarLight RPGTacAction]
+ActionName_Localized="Lunar Blast"
+
+[Actions.Act_RadiantLight RPGTacAction]
+ActionName_Localized="Radiant Light"
+
+
+; ------ Reactions ------
+
+[Actions.Reaction_ExamineWeakness RPGTacAction]
+ActionName_Localized="Examine Weakness"
+
+[Actions.Reaction_Fortify RPGTacAction]
+ActionName_Localized="Fortify"
+
+[Actions.Reaction_Salvation RPGTacAction]
+ActionName_Localized="Salvation"
+
+[Actions.Reaction_StrategicInsights RPGTacAction]
+ActionName_Localized="Strategic Insights"
+
+[Actions.Reaction_VoidSky RPGTacAction]
+ActionName_Localized="Void Sky"
+
+[Actions.Reaction_ConcealingDarkness RPGTacAction]
+ActionName_Localized="Concealing Darkness"
+
+; ------ Triggers ------
+
+[Actions.TriggerReaction_ExamineWeakness RPGTacTriggerReaction]
+ReactionName_Localized="Examine Weakness"
+ToolTipText_Localized="Identifies weaknesses in enemy strategy during the heat of battle. Examined enemies have reduced physical and magical defenses."
+
+[Actions.TriggerReaction_Salvation RPGTacTriggerReaction]
+ReactionName_Localized="Salvation"
+ToolTipText_Localized="Salvation is a White, Charisma, Healing reaction that greatly heals allies who have been attacked."
+
+[Actions.TriggerReaction_Fortify RPGTacTriggerReaction]
+ReactionName_Localized="Fortify"
+ToolTipText_Localized="Increases physical defenses during the heat of battle."
+
+[Actions.TriggerReaction_StrategicInsights RPGTacTriggerReaction]
+ReactionName_Localized="Strategic Insights"
+ToolTipText_Localized="Advises allies on an effective battle strategy. Advised allies have increased critical chance, block, and dodge."
+
+[Actions.TriggerReaction_VoidSky RPGTacTriggerReaction]
+ReactionName_Localized="Void Sky"
+ToolTipText_Localized="Inflicts Voidshock to groups of enemies. Voidshocked enemies have reduced critical chance and magical defense."
+
+[Actions.TriggerReaction_ConcealingDarkness RPGTacTriggerReaction]
+ReactionName_Localized="Concealing Darkness"
+ToolTipText_Localized="Grants Concealed status to an ally. Concealed allies have greatly increased dodge."
+
+; ------ Statuses ------
+; Is this needed?
