@@ -18,7 +18,11 @@ The mod is designed to work with existing save files. Create a backup of your sa
   <tr>
     <td>Available Abilities</td>
     <td>
-      Lunar Blast (default), Void Sky (reaction, inflicts new debuff Voidshock), Concealing Darkness (reaction, grants new buff Concealed)
+      <ul>
+        <li>Lunar Blast (default)</li>
+        <li>Void Sky (reaction, inflicts new debuff Voidshock)</li>
+        <li>Concealing Darkness (reaction, grants new buff Concealed)</li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -40,7 +44,11 @@ The mod is designed to work with existing save files. Create a backup of your sa
   <tr>
     <td>Available Abilities</td>
     <td>
-      Radiant Light (default), Salvation (reaction), Empowering Faith (passive)
+      <ul>
+        <li>Radiant Light (default)</li>
+        <li>Salvation (reaction)</li>
+        <li>Empowering Faith (passive)</li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -62,7 +70,11 @@ The mod is designed to work with existing save files. Create a backup of your sa
   <tr>
     <td>Available Abilities</td>
     <td>
-      Greater Salve (default), Examine Weakness (reaction, inflicts new debuff Examined), Strategic Insights (reaction, grants new buff Advised)
+      <ul>
+        <li>Greater Salve (default)</li>
+        <li>Examine Weakness (reaction, inflicts new debuff Examined)</li>
+        <li>Strategic Insights (reaction, grants new buff Advised)</li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -84,7 +96,11 @@ The mod is designed to work with existing save files. Create a backup of your sa
   <tr>
     <td>Available Abilities</td>
     <td>
-      Bold Strike (default), Fortify (reaction, grants new buff Fortified), Veteran Tactics (passive)
+      <ul>
+        <li>Bold Strike (default)</li>
+        <li>Fortify (reaction, grants new buff Fortified)</li>
+        <li>Veteran Tactics (passive)</li>
+      </ul>
     </td>
   </tr>
   <tr>
