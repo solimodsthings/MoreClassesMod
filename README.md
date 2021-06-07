@@ -5,6 +5,8 @@ This is a mod for [Himeko Sutori](https://himekosutori.com/) that adds new unloc
 
 The mod is designed to work with existing save files. Create a backup of your save file if you choose to use this mod in the middle of an existing campaign. 
 
+More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://github.com/solimodsthings/EventsMod).
+
 # New Classes Added
 
 <h2>Moon Sage</h2>
@@ -131,7 +133,7 @@ MutatorsLoaded=EventsMod.EventsModStart,MoreClassesMod.MoreClassesModStart
 (Note: Make sure there are no spaces in the mod list as whitespaces don’t get trimmed!)
 
 # What exactly am I installing?
-- EventsMod.u – this is a utility mod that replaces the game’s base PlayerController class with an identical one that is observable. The observable PlayerController generates events that other mods can listen to. This mod does not add content, but is a requirement for More Classes Mod to work.
+- [EventsMod.u](https://github.com/solimodsthings/EventsMod) – this is a utility mod that replaces the game’s base PlayerController class with an identical one that is observable. The observable PlayerController generates events that other mods can listen to. This mod does not add content, but is a requirement for More Classes Mod to work.
 - MoreClassesMod.u – this contains logic that unlocks classes for characters that meet the requirements. It is also in charge of ensuring that new classes can equip weapons and armor from the base game properly.
 - MoreClassesModContent.upk – this is where new classes, abilities, cards, and status effects are defined. 
 - MoreClassesModContent.int – this is where the names and descriptions of classes, abilities, etc. are defined.
