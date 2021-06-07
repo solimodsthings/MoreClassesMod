@@ -1,13 +1,15 @@
 // [More Classes Mod (2021)]
 
+// This class checks whether characters meet requirements
+// to unlock hidden classes. It also updates card decks
+// if new classes are unlocked the normally through a
+// level up card.
 class CharacterClassModifier extends ContentModifier
     dependson(EventManager)
     dependson(RPGTacGame);
 
 var EventManager ParentPlayerController;
 
-// One-time, one-off modifications go here. Modifications here do not always affect
-// existing save states. Use a corresponding Modify*() function instead.
 function OnInitialization(EventManager Manager)
 {
     self.ParentPlayerController = Manager;
@@ -37,7 +39,7 @@ function OnPawnLevelUp(RPGTacPawn TargetPawn)
 
         if(GameTime < 5 || GameTime >= 19 )
         {
-            // A mage leveled up during night time, give them access to class Lunar Mage
+            // A mage leveled up during night time, give them access to class Moon Sage
             UnlockClass(TargetPawn, MoonSageClass);
         }
 

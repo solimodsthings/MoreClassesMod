@@ -1,8 +1,10 @@
 // [More Classes Mod (2021)]
 
+// This class checks whether an item's "AllowedCharacterClasses"
+// list needs to be updated and does so to permit new classes
+// to use existing base game weapons and armor as required.
 class EquipmentModifier extends ContentModifier
     dependson(RPGTacSupply_CraftingRecipe);
-
 
 // Override
 function OnPawnsInitialized(Array<RPGTacPawn> Pawns) 
