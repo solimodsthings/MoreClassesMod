@@ -1,4 +1,4 @@
-// [More Classes Mod (2021)]
+// [More Classes Mod for Himeko Sutori (2021)]
 
 class ContentModifier extends EventListener
     placeable;
@@ -6,6 +6,7 @@ class ContentModifier extends EventListener
 // Part of original game
 var RPGTacCharacterClass StudentClass;
 var RPGTacCharacterClass AdventurerClass;
+var RPGTacCharacterClass WarriorClass;
 var RPGTacCharacterClass ClericClass;
 var RPGTacCharacterClass CadetClass;
 var RPGTacCharacterClass MageClass;
@@ -26,13 +27,14 @@ DefaultProperties
     // Part of original game
     StudentClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Student'
     AdventurerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Adventurer'
+    WarriorClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Warrior'
     ClericClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Cleric'
     CadetClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Cadet'
     MageClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Mage'
     KnightClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Knight'
 
     // Classes added by mod
-	BishopClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Bishop'
+    BishopClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Bishop'
     ScholarClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Scholar'
     MercenaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Mercenary'
     MoonSageClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_MoonSage'

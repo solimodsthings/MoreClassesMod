@@ -14,8 +14,8 @@ ClassDescription_Localized="There are several distinct orders of mages in the wo
 MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Scholar RPGTacCharacterClass]
-ClassName_Localized="Scholar"
-ClassDescription_Localized="Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and the pursuit of knowledge as Scholars. In addition to healing allies, Scholars use their extensive knowledge in history and military strategy to buff allies and debuff enemies.\n\n(This hidden class is unlocked once the Student class is mastered.)"
+ClassName_Localized="Tactician"
+ClassDescription_Localized="Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and military study as Tacticians. Tacticians use their extensive knowledge in history and military strategy to buff allies and debuff enemies.\n\n(This hidden class is unlocked once the Student class is mastered.)"
 MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Mercenary RPGTacCharacterClass]

@@ -1,4 +1,4 @@
-// [More Classes Mod (2021)]
+// [More Classes Mod for Himeko Sutori (2021)]
 
 // This class checks whether characters meet requirements
 // to unlock hidden classes. It also updates card decks
