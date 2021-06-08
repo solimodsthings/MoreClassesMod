@@ -61,7 +61,7 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
   </tr>
 </table>
 
-<h2>Scholar</h2>
+<h2>Tactician</h2>
 <table>
   <tr>
     <td>Unlock Requirement</td>
@@ -82,7 +82,7 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
   <tr>
     <td>Description</td>
     <td>
-      Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and the pursuit of knowledge as Scholars. In addition to healing allies, Scholars use their extensive knowledge in history and military strategy to buff allies and debuff enemies.
+      Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and military study as Tacticians. Tacticians use their extensive knowledge in history and military strategy to buff allies and debuff enemies.
     </td>
   </tr>
 </table>
