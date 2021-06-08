@@ -1,4 +1,4 @@
-// [More Classes Mod (2021)]
+// [More Classes Mod for Himeko Sutori (2021)]
 
 // This class checks whether an item's "AllowedCharacterClasses"
 // list needs to be updated and does so to permit new classes
@@ -49,6 +49,7 @@ private function ModifyEquipment(RPGTacEquipment Equipment)
         Mirror(ClericClass, BishopClass, Equipment);
         Mirror(StudentClass, ScholarClass, Equipment);
         Mirror(AdventurerClass, MercenaryClass, Equipment);
+        Mirror(WarriorClass, MercenaryClass, Equipment);
         Mirror(MageClass, MoonSageClass, Equipment);
         // Mirror(CadetClass, SpellswordClass, Equipment);
     }
