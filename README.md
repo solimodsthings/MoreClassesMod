@@ -7,7 +7,7 @@ The mod is designed to work with existing save files. Create a backup of your sa
 
 More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://github.com/solimodsthings/EventsMod).
 
-# New Classes Added
+# New Classes Added (as of v0.1)
 
 <h2>Moon Sage</h2>
 <table>
