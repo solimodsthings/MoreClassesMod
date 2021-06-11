@@ -17,7 +17,7 @@ var RPGTacCharacterClass BishopClass;
 var RPGTacCharacterClass ScholarClass;
 var RPGTacCharacterClass MercenaryClass;
 var RPGTacCharacterClass MoonSageClass;
-//var RPGTacCharacterClass SpellswordClass;
+var RPGTacCharacterClass LuminaryClass;
 
 // Level up cards added by mod
 var RPGTacCharacterClass_LevelUpCard BishopCard;
@@ -38,7 +38,7 @@ DefaultProperties
     ScholarClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Scholar'
     MercenaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Mercenary'
     MoonSageClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_MoonSage'
-    // SpellswordClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Spellsword'
+    LuminaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Luminary'
 
     // Level up cards added by mod
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'

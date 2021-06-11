@@ -63,6 +63,13 @@ private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
         UnlockClass(TargetPawn, MercenaryClass);
     }
 
+    if(HasClassInstanceLevel(TargetPawn, KnightClass, 5)
+        && HasClassInstanceLevel(TargetPawn, MageClass, 5)
+        && AtLeastLevel(TargetPawn, 15))
+    {
+        UnlockClass(TargetPawn, LuminaryClass);
+    }
+
 }
 
 // This is used if a new class can only be unlocked by acquiring a level card that is 
@@ -217,4 +224,9 @@ private function bool IsArchetype(RPGTacCharacterClass TargetClassArchetype, RPG
 private function bool IsClass(RPGTacCharacterClass TargetClassInstance, RPGTacCharacterClass CharacterClassArchetype)
 {
     return RPGTacCharacterClass(TargetClassInstance.ObjectArchetype).ClassName == CharacterClassArchetype.ClassName;
+}
+
+private function bool AtLeastLevel(RPGTacPawn TargetPawn, int CharacterLevel)
+{
+    return TargetPawn.CharacterLevel >= CharacterLevel;
 }
