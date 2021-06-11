@@ -14,8 +14,8 @@ ClassDescription_Localized="There are several distinct orders of mages in the wo
 MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Scholar RPGTacCharacterClass]
-ClassName_Localized="Strategist"
-ClassDescription_Localized="Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and military study as Strategists. Strategists use their extensive knowledge in history and military strategy to buff allies and debuff enemies.\n\n(This hidden class is unlocked once the Student class is mastered.)"
+ClassName_Localized="Tactician"
+ClassDescription_Localized="Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and military study as Tacticians. Tacticians use their extensive knowledge in history and military strategy to buff allies and debuff enemies.\n\n(This hidden class is unlocked once the Student class is mastered.)"
 MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Mercenary RPGTacCharacterClass]
@@ -23,10 +23,6 @@ ClassName_Localized="Mercenary"
 ClassDescription_Localized="Adventurers who enjoy front-line fighting will sometimes go on to make a name for themselves as Mercenaries for hire. The only thing better than seeking a life of adventure is getting paid to seek a life of adventure.\n\n(This hidden class is unlocked once the Adventurer class is mastered.)"
 MasterLocalized="Master"
 
-[CharacterClasses.CharacterClass_Luminary RPGTacCharacterClass]
-ClassName_Localized="Luminary"
-ClassDescription_Localized="Luminaries are ambitious visionaries and accomplished leaders trained in both sword and magic combat. They are the dignitaries of nations.\n\n(This hidden class is unlocked after reaching character level 15, Knight level 5, and Mage level 5.)"
-MasterLocalized="Master"
 
 ; ------ Cards  ------
 
@@ -75,16 +71,6 @@ CardName_Localized="Reaction: Concealing Darkness"
 CardDescription_Localized="Teaches your hero the reaction Concealing Darkness which grants Concealed status to allies. Concealed allies have greatly increased dodge."
 ToolTipText_Localized="Grants Concealed status to an ally. Concealed allies have greatly increased dodge."
 
-[LevelUpCards.Card_Reaction_ArcaneTorrent RPGTacCharacterClass_LevelUpCard]
-CardName_Localized="Reaction: Arcane Torrent"
-CardDescription_Localized="Grants your hero the ability to use the Mage ability Arcane Torrent as a reaction when attacked."
-ToolTipText_Localized="Casts Mage ability Arcane Torrent when attacked."
-
-[LevelUpCards.Card_Reaction_TrainedStrike RPGTacCharacterClass_LevelUpCard]
-CardName_Localized="Reaction: Trained Strike"
-CardDescription_Localized="Grants your hero the ability to use the Knight ability Trained Strike as a reaction when attacked."
-ToolTipText_Localized="Counters with Knight ability Trained Strike when attacked."
-
 ; ------ Actions ------
 
 [Actions.Act_BoldStrike RPGTacAction]
@@ -123,12 +109,6 @@ ActionName_Localized="Void Sky"
 [Actions.Reaction_ConcealingDarkness RPGTacAction]
 ActionName_Localized="Concealing Darkness"
 
-[Actions.Reaction_VoidSky RPGTacAction]
-ActionName_Localized="Void Sky"
-
-[Actions.Reaction_ConcealingDarkness RPGTacAction]
-ActionName_Localized="Concealing Darkness"
-
 ; ------ Triggers ------
 
 [Actions.TriggerReaction_ExamineWeakness RPGTacTriggerReaction]
@@ -154,14 +134,6 @@ ToolTipText_Localized="Inflicts Voidshock to groups of enemies. Voidshocked enem
 [Actions.TriggerReaction_ConcealingDarkness RPGTacTriggerReaction]
 ReactionName_Localized="Concealing Darkness"
 ToolTipText_Localized="Grants Concealed status to an ally. Concealed allies have greatly increased dodge."
-
-[Actions.TriggerAct_ArcaneTorrent RPGTacTriggerReaction]
-ReactionName_Localized="Arcane Torrent"
-ToolTipText_Localized="Casts Mage ability Arcane Torrent when attacked."
-
-[Actions.TriggerAct_TrainedStrike RPGTacTriggerReaction]
-ReactionName_Localized="Trained Strike"
-ToolTipText_Localized="Counters with Knight ability Trained Strike when attacked."
 
 ; ------ Statuses ------
 ; Is this needed?
