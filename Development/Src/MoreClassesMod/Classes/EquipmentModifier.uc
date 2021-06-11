@@ -53,6 +53,8 @@ private function ModifyEquipment(RPGTacEquipment Equipment)
         Mirror(MageClass, MoonSageClass, Equipment);
         Mirror(MageClass, LuminaryClass, Equipment);
         Mirror(KnightClass, LuminaryClass, Equipment);
+        Mirror(DruidClass, GuardianClass, Equipment);
+        
     }
 }
 

@@ -28,6 +28,11 @@ ClassName_Localized="Luminary"
 ClassDescription_Localized="Luminaries are ambitious visionaries and accomplished leaders trained in both sword and magic combat. They are the dignitaries of nations.\n\n(This hidden class is unlocked after reaching character level 15, Knight level 5, and Mage level 5.)"
 MasterLocalized="Master"
 
+[CharacterClasses.CharacterClass_Guardian RPGTacCharacterClass]
+ClassName_Localized="Guardian"
+ClassDescription_Localized="\n\n(This hidden class is unlocked after reaching character level 15, Druid level 5, and Cleric level 5.)"
+MasterLocalized="Master"
+
 ; ------ Cards  ------
 
 [LevelUpCards.Card_Class_Bishop RPGTacCharacterClass_LevelUpCard]
@@ -102,6 +107,8 @@ ActionName_Localized="Lunar Blast"
 [Actions.Act_RadiantLight RPGTacAction]
 ActionName_Localized="Radiant Light"
 
+[Actions.Act_Vigilance RPGTacAction]
+ActionName_Localized="Vigilance"
 
 ; ------ Reactions ------
 

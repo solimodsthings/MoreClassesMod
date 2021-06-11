@@ -70,6 +70,13 @@ private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
         UnlockClass(TargetPawn, LuminaryClass);
     }
 
+    if(HasClassInstanceLevel(TargetPawn, DruidClass, 5)
+        && HasClassInstanceLevel(TargetPawn, ClericClass, 5)
+        && AtLeastLevel(TargetPawn, 15))
+    {
+        UnlockClass(TargetPawn, GuardianClass);
+    }
+
 }
 
 // This is used if a new class can only be unlocked by acquiring a level card that is 
