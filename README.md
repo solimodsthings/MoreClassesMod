@@ -11,7 +11,7 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 
 <b>Added as of v0.1</b>
 - Moon Sage
-- Tactician
+- Strategist
 - Mercenary
 - Bishop
 
