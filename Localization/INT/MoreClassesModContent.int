@@ -171,4 +171,20 @@ ReactionName_Localized="Trained Strike"
 ToolTipText_Localized="Counters with Knight ability Trained Strike when attacked."
 
 ; ------ Statuses ------
-; Is this needed?
+[StatusEffects.Status_Advised RPGTacStatusEffect]
+StatusName_Localized="Advised"
+
+[StatusEffects.Status_Concealed RPGTacStatusEffect]
+StatusName_Localized="Concealed"
+
+[StatusEffects.Status_Examined RPGTacStatusEffect]
+StatusName_Localized="Examined"
+
+[StatusEffects.Status_Fortify RPGTacStatusEffect]
+StatusName_Localized="Fortified"
+
+[StatusEffects.Status_Vigilant RPGTacStatusEffect]
+StatusName_Localized="Vigilant"
+
+[StatusEffects.Status_Voidshock RPGTacStatusEffect]
+StatusName_Localized="Voidshocked"
