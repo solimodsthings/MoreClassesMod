@@ -7,111 +7,18 @@ The mod is designed to work with existing save files. Create a backup of your sa
 
 More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://github.com/solimodsthings/EventsMod).
 
-# New Classes Added
+# Classes 
 
-<h2>Moon Sage</h2>
-<table>
-  <tr>
-    <td>Unlock Requirement</td>
-    <td>
-      Any Mage that levels up at night time will unlock this hidden class.
-    </td>
-  </tr>
-  <tr>
-    <td>Available Abilities</td>
-    <td>
-      <ul>
-        <li>Lunar Blast (default)</li>
-        <li>Void Sky (reaction, inflicts new debuff Voidshock)</li>
-        <li>Concealing Darkness (reaction, grants new buff Concealed)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>
-      There are several distinct orders of mages in the world. Moon Sages are such an order known for worshipping a goddess of the night sky. It is not known whether this order legitimately derives power from the moon, but their ability to conceal the movements of allies in combat is unquestionably valuable.
-    </td>
-  </tr>
-</table>
+<b>Added as of v0.1</b>
+- Moon Sage
+- Tactician
+- Mercenary
+- Bishop
 
-<h2>Bishop</h2>
-<table>
-    <tr>
-    <td>Unlock Requirement</td>
-    <td> 
-      Unlock the Cleric class first then acquire the Bishop card from the Cleric's deck.<br/></br>If you have characters that have Cleric unlocked already, the Bishop card will appear as received despite never encountering it. This mod will automatically unlock the Bishop class for any characters where this is the case.
-    </td>
-  </tr>
-  <tr>
-    <td>Available Abilities</td>
-    <td>
-      <ul>
-        <li>Radiant Light (default)</li>
-        <li>Salvation (reaction)</li>
-        <li>Empowering Faith (passive)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>
-      The most experienced and battle-hardened of Clerics are eventually ordained to become Bishops.
-    </td>
-  </tr>
-</table>
+([Check out the full class descriptions here](https://github.com/solimodsthings/MoreClassesMod/wiki).)
 
-<h2>Tactician</h2>
-<table>
-  <tr>
-    <td>Unlock Requirement</td>
-    <td>
-      Any character that masters the Student class unlocks this hidden class.
-    </td>
-  </tr>
-  <tr>
-    <td>Available Abilities</td>
-    <td>
-      <ul>
-        <li>Greater Salve (default)</li>
-        <li>Examine Weakness (reaction, inflicts new debuff Examined)</li>
-        <li>Strategic Insights (reaction, grants new buff Advised)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>
-      Most Students eventually become Clerics or Druids, but a few will choose a life devoted to scholarly research and military study as Tacticians. Tacticians use their extensive knowledge in history and military strategy to buff allies and debuff enemies.
-    </td>
-  </tr>
-</table>
-
-<h2>Mercenary</h2>
-<table>
-  <tr>
-    <td>Unlock Requirement</td>
-    <td>
-      Any character that masters the Adventurer class unlocks this hidden class.
-    </td>
-  </tr>
-  <tr>
-    <td>Available Abilities</td>
-    <td>
-      <ul>
-        <li>Bold Strike (default)</li>
-        <li>Fortify (reaction, grants new buff Fortified)</li>
-        <li>Veteran Tactics (passive)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>
-      Adventurers who enjoy front-line fighting will sometimes go on to make a name for themselves as Mercenaries for hire. The only thing better than seeking a life of adventure is getting paid to seek a life of adventure.
-    </td>
-  </tr>
-</table>
+<b>Planned for Next Release</b>
+- Luminary
 
 # Mod Dependencies and Compatiblity
 This mod relies on Events Mod and is compatible with other mods that use Events Mod. Please ensure Events Mod is loaded before this mod. See installation steps further below.
