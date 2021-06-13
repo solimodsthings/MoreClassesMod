@@ -11,14 +11,16 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 
 <b>Added as of v0.1</b>
 - Moon Sage
-- Tactician
+- Strategist
 - Mercenary
 - Bishop
 
 ([Check out the full class descriptions here](https://github.com/solimodsthings/MoreClassesMod/wiki).)
 
-<b>Planned for Next Release</b>
+<b>Planned for Next Release (v0.2)</b>
 - Luminary
+- Guardian
+- Peacekeeper
 
 # Mod Dependencies and Compatiblity
 This mod relies on Events Mod and is compatible with other mods that use Events Mod. Please ensure Events Mod is loaded before this mod. See installation steps further below.
