@@ -1,4 +1,4 @@
-class NpcModifier extends ContentModifier
+class ShopModifier extends ContentModifier
     Dependson(RPGTacSupply_CraftingRecipe)
     Dependson(RPGTacSupply);
 
@@ -9,21 +9,29 @@ function OnInitialization(EventManager Manager)
     self.Parent = Manager;
 }
 
-// Called whenever the player enters an area that is not a world map
-function OnEnterArea() 
+function OnCauseEvent(optional Name event)
 {
     local RPGTacKismetOpenShop Shop;
     
-
-    if(IsCurrentLevel('Main_Desert_Ramliyah'))
+    `log("OnCauseEvent(): " $ event);
+    if(event == 'TalkToNabil')
     {
-        Shop = GetShop('RPGTacKismetOpenShop_6'); // Nabil's shop
-        if(Shop != none)
+        
+        if(IsCurrentLevel('Main_Desert_Ramliyah'))
         {
-            AddRecipe(Shop, PeacekeeperTanegashimaRecipe);
+            Shop = GetShop('RPGTacKismetOpenShop_6'); // Nabil's shop
+            if(Shop != none)
+            {
+                AddRecipe(Shop, PeacekeeperTanegashimaRecipe);
+            }
         }
     }
+}
 
+// Called whenever the player enters an area that is not a world map
+function OnEnterArea() 
+{       
+    `log("OnEnterArea()");
 }
 
 function AddRecipe(RPGTacKismetOpenShop Shop, RPGTacSupply_CraftingRecipe Recipe)
@@ -56,13 +64,17 @@ function bool IsCurrentLevel(Name packageName)
     local int i;
     for(i = 0; i < Parent.World.StreamingLevels.Length; i++)
     {
-        if(packageName == Parent.World.StreamingLevels[i].PackageName)
+        if (Parent.World.StreamingLevels[i] != None && (Parent.World.StreamingLevels[i].bIsVisible || Parent.World.StreamingLevels[i].bHasLoadRequestPending))
         {
             `log("Comparing " $ packageName $ " and " $ Parent.World.StreamingLevels[i].PackageName);
-            return true;
+            if(packageName == Parent.World.StreamingLevels[i].PackageName)
+            {
+                `log("IsCurrentLevel() evaluated to true");
+                return true;
+            }
         }
     }
-
+    `log("IsCurrentLevel() evaluated to false");
     return false;
 }
 
@@ -73,13 +85,14 @@ function RPGTacKismetOpenShop GetShop(Name ShopName)
     local array<SequenceObject> Events;
 
     GameSequence = Parent.World.GetGameSequence();
-    GameSequence.FindSeqObjectsByClass(class'RPGTacKismetOpenShop', true, Events);
+    GameSequence.FindSeqObjectsByClass(class'RPGTacKismetOpenShop', TRUE, Events);
 
+    `log("Finding whether shop exists or not... events length is " $ Events.Length);
     for (i = 0; i < Events.Length; i++)
-    {            
+    {    
+        `log("Checking Shop: " $ Events[i].Name $ " == " $ ShopName);        
         if(Events[i].Name == ShopName)
         {
-            //`log("SeqObject Name: " $ Events[i].Name);
             return RPGTacKismetOpenShop(Events[i]);
         }
     }

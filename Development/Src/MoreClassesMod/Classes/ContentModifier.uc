@@ -24,6 +24,9 @@ var RPGTacCharacterClass DruidClass;
 // Level up cards added by mod
 var RPGTacCharacterClass_LevelUpCard BishopCard;
 
+// Recipes
+var RPGTacSupply_CraftingRecipeEquipment PeacekeeperTanegashimaRecipe;
+
 DefaultProperties
 {
     // Part of original game
@@ -46,4 +49,7 @@ DefaultProperties
 
     // Level up cards added by mod
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'
+
+    // Recipes
+    PeacekeeperTanegashimaRecipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Tanegashima'
 }
