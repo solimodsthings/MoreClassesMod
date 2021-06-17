@@ -54,6 +54,11 @@ private function ModifyEquipment(RPGTacEquipment Equipment)
         Mirror(MageClass, LuminaryClass, Equipment);
         Mirror(KnightClass, LuminaryClass, Equipment);
         Mirror(DruidClass, GuardianClass, Equipment);
+
+        if(RPGTacEquipmentMainHand(Equipment) == none) // only mirror armor
+        {
+            Mirror(GunnerClass, PeacekeeperClass, Equipment);
+        }
         
     }
 }

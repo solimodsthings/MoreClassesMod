@@ -47,6 +47,7 @@ function OnPawnLevelUp(RPGTacPawn TargetPawn)
 
 }
 
+// Only called on savestate load and when a level up is detected
 private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
 {
     // Unlocks through level up cards
@@ -75,6 +76,13 @@ private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
         && AtLeastLevel(TargetPawn, 15))
     {
         UnlockClass(TargetPawn, GuardianClass);
+    }
+
+    if(HasClassInstanceLevel(TargetPawn, MageClass, 5)
+        && HasClassInstanceLevel(TargetPawn, GunnerClass, 5)
+        && AtLeastLevel(TargetPawn, 15))
+    {
+        UnlockClass(TargetPawn, PeacekeeperClass);
     }
 
 }

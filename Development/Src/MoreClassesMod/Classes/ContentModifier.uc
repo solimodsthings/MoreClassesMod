@@ -10,6 +10,7 @@ var RPGTacCharacterClass WarriorClass;
 var RPGTacCharacterClass ClericClass;
 var RPGTacCharacterClass CadetClass;
 var RPGTacCharacterClass MageClass;
+var RPGTacCharacterClass GunnerClass;
 var RPGTacCharacterClass KnightClass;
 
 // Classes added by mod
@@ -20,6 +21,7 @@ var RPGTacCharacterClass MoonSageClass;
 var RPGTacCharacterClass LuminaryClass;
 var RPGTacCharacterClass GuardianClass;
 var RPGTacCharacterClass DruidClass;
+var RPGTacCharacterClass PeacekeeperClass;
 
 // Level up cards added by mod
 var RPGTacCharacterClass_LevelUpCard BishopCard;
@@ -38,6 +40,7 @@ DefaultProperties
     MageClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Mage'
     KnightClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Knight'
     DruidClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Druid'
+    GunnerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Gunner'
 
     // Classes added by mod
     BishopClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Bishop'
@@ -46,6 +49,7 @@ DefaultProperties
     MoonSageClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_MoonSage'
     LuminaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Luminary'
     GuardianClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Guardian'
+    PeacekeeperClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Peacekeeper'
 
     // Level up cards added by mod
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'

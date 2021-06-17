@@ -12,11 +12,15 @@ function OnInitialization(EventManager Manager)
 function OnCauseEvent(optional Name event)
 {
     local RPGTacKismetOpenShop Shop;
-    
-    `log("OnCauseEvent(): " $ event);
+
+    // `log("OnCauseEvent(): " $ event);
+
+    // We're handling shop events here instead of OnEnterArea() because
+    // it's not guaranteed that RPGTacKismentOpenShop instances will exist
+    // immediately after entering the area. If this causes performance issues,
+    // I suppose we could try OnEnterArea() after a timed delay.
     if(event == 'TalkToNabil')
-    {
-        
+    {        
         if(IsCurrentLevel('Main_Desert_Ramliyah'))
         {
             Shop = GetShop('RPGTacKismetOpenShop_6'); // Nabil's shop
@@ -31,7 +35,7 @@ function OnCauseEvent(optional Name event)
 // Called whenever the player enters an area that is not a world map
 function OnEnterArea() 
 {       
-    `log("OnEnterArea()");
+    // `log("OnEnterArea()");
 }
 
 function AddRecipe(RPGTacKismetOpenShop Shop, RPGTacSupply_CraftingRecipe Recipe)
@@ -66,15 +70,15 @@ function bool IsCurrentLevel(Name packageName)
     {
         if (Parent.World.StreamingLevels[i] != None && (Parent.World.StreamingLevels[i].bIsVisible || Parent.World.StreamingLevels[i].bHasLoadRequestPending))
         {
-            `log("Comparing " $ packageName $ " and " $ Parent.World.StreamingLevels[i].PackageName);
+            // `log("Comparing " $ packageName $ " and " $ Parent.World.StreamingLevels[i].PackageName);
             if(packageName == Parent.World.StreamingLevels[i].PackageName)
             {
-                `log("IsCurrentLevel() evaluated to true");
+                // `log("IsCurrentLevel() evaluated to true");
                 return true;
             }
         }
     }
-    `log("IsCurrentLevel() evaluated to false");
+    // `log("IsCurrentLevel() evaluated to false");
     return false;
 }
 
@@ -87,10 +91,10 @@ function RPGTacKismetOpenShop GetShop(Name ShopName)
     GameSequence = Parent.World.GetGameSequence();
     GameSequence.FindSeqObjectsByClass(class'RPGTacKismetOpenShop', TRUE, Events);
 
-    `log("Finding whether shop exists or not... events length is " $ Events.Length);
+    // `log("Finding whether shop exists or not... events length is " $ Events.Length);
     for (i = 0; i < Events.Length; i++)
     {    
-        `log("Checking Shop: " $ Events[i].Name $ " == " $ ShopName);        
+        // `log("Checking Shop: " $ Events[i].Name $ " == " $ ShopName);        
         if(Events[i].Name == ShopName)
         {
             return RPGTacKismetOpenShop(Events[i]);
