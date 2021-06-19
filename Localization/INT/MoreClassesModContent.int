@@ -25,12 +25,17 @@ MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Luminary RPGTacCharacterClass]
 ClassName_Localized="Luminary"
-ClassDescription_Localized="Luminaries are ambitious visionaries and accomplished leaders trained in both sword and magic combat. They are the dignitaries of nations.\n\n(This hidden class is unlocked after reaching character level 15, Knight level 5, and Mage level 5.)"
+ClassDescription_Localized="Luminaries are ambitious visionaries and accomplished leaders trained in both sword and magic combat. They are the dignitaries of nations and often lead armies.\n\n(This hidden class is unlocked after reaching character level 15, Knight level 5, and Mage level 5.)"
 MasterLocalized="Master"
 
 [CharacterClasses.CharacterClass_Guardian RPGTacCharacterClass]
 ClassName_Localized="Guardian"
-ClassDescription_Localized="\n\n(This hidden class is unlocked after reaching character level 15, Druid level 5, and Cleric level 5.)"
+ClassDescription_Localized="Guardians are specialized support units who protect groups of allies through area of effect buffs. They are especially effective at mitigating negative status effects caused by enemy Illusionists.\n\n(This hidden class is unlocked after reaching character level 15, Druid level 5, and Cleric level 5.)"
+MasterLocalized="Master"
+
+[CharacterClasses.CharacterClass_Peacekeeper RPGTacCharacterClass]
+ClassName_Localized="Peacekeeper"
+ClassDescription_Localized="Peacekeepers are specialized Gunners who use conjured ammunition and artillery magic. They deal high area damage, but have reduced mobility because of the size and weight of the weapons they carry. Peacekeepers can only equip heavy caliber weapons which are created by re-engineering long guns.\n\n(This hidden class is unlocked after reaching character level 15, Gunner level 5, and Mage level 5.)"
 MasterLocalized="Master"
 
 ; ------ Cards  ------
