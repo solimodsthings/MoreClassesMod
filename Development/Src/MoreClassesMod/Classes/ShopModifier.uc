@@ -11,24 +11,41 @@ function OnInitialization(EventManager Manager)
 
 function OnCauseEvent(optional Name event)
 {
-    local RPGTacKismetOpenShop Shop;
+    // local RPGTacKismetOpenShop Shop;
 
     // `log("OnCauseEvent(): " $ event);
 
     // We're handling shop events here instead of OnEnterArea() because
     // it's not guaranteed that RPGTacKismentOpenShop instances will exist
     // immediately after entering the area. If this causes performance issues,
-    // I suppose we could try OnEnterArea() after a timed delay.
-    if(event == 'TalkToNabil')
-    {        
-        if(IsCurrentLevel('Main_Desert_Ramliyah'))
-        {
-            Shop = GetShop('RPGTacKismetOpenShop_6'); // Nabil's shop
-            if(Shop != none)
-            {
-                AddRecipe(Shop, PeacekeeperTanegashimaRecipe);
-            }
-        }
+    // I suppose we could try OnEnterArea() again but with a timed delay.
+    if((IsCurrentLevel('Main_Desert_Ramliyah') && event == 'TalkToNabil'))
+    {
+        AddRecipesToShop('RPGTacKismetOpenShop_6'); // Nabil's shop in Ramliyah
+    }
+    else if(IsCurrentLevel('Main_Halgdalir_Outfitter') && event == 'TalkToShopkeeper')
+    {
+        AddRecipesToShop('RPGTacKismetOpenShop_2'); // Frej's shop in Halgdalir
+    }
+    else if(IsCurrentLevel('Main_Shadow4_DholaviraOutpost') && event == 'TalkToVani')
+    {
+        AddRecipesToShop('RPGTacKismetOpenShop_0'); // Vani's shop in Misfortune's Outpost
+    }
+    else
+    {
+        // `log("---------------- OnCauseEvent() : " $ event $ "----------------");
+    }
+}
+
+private function AddRecipesToShop(Name shopname)
+{
+    local RPGTacKismetOpenShop Shop;
+    Shop = GetShop(shopname); // Nabil's shop
+    if(Shop != none)
+    {
+        AddRecipe(Shop, HeavyCaliber1Recipe);
+        AddRecipe(Shop, HeavyCaliber2Recipe);
+        AddRecipe(Shop, HeavyCaliber3Recipe);
     }
 }
 
