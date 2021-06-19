@@ -88,7 +88,7 @@ ToolTipText_Localized="Grants Concealed status to an ally. Concealed allies have
 [LevelUpCards.Card_Reaction_ArcaneTorrent RPGTacCharacterClass_LevelUpCard]
 CardName_Localized="Reaction: Arcane Torrent"
 CardDescription_Localized="Grants your hero the ability to use the Mage ability Arcane Torrent as a reaction when attacked."
-ToolTipText_Localized="Casts Mage ability Arcane Torrent when attacked."
+ToolTipText_Localized="Casts Mage spell Arcane Torrent when attacked."
 
 [LevelUpCards.Card_Reaction_TrainedStrike RPGTacCharacterClass_LevelUpCard]
 CardName_Localized="Reaction: Trained Strike"
@@ -193,3 +193,18 @@ StatusName_Localized="Vigilant"
 
 [StatusEffects.Status_Voidshock RPGTacStatusEffect]
 StatusName_Localized="Voidshocked"
+
+
+; ------ Recipes -------
+
+[Recipes.Recipe_Peacekeeper_Blunderbuss RPGTacSupply_CraftingRecipeEquipment]
+ItemName_Localized="Engineering Schematic: Heavy Caliber Gun I"
+ItemDescription_Localized="Re-engineers a Blunderbuss to a Heavy Caliber Gun. Only usable by Peacekeepers."
+
+[Recipes.Recipe_Peacekeeper_Arquebus RPGTacSupply_CraftingRecipeEquipment]
+ItemName_Localized="Engineering Schematic: Heavy Caliber Gun II"
+ItemDescription_Localized="Re-engineers an Arquebus to a Heavy Caliber Gun. Only usable by Peacekeepers."
+
+[Recipes.Recipe_Peacekeeper_Tanegashima RPGTacSupply_CraftingRecipeEquipment]
+ItemName_Localized="Engineering Schematic: Heavy Caliber Gun III"
+ItemDescription_Localized="Re-engineers a Tanegashima to a Heavy Caliber Gun. Only usable by Peacekeepers."

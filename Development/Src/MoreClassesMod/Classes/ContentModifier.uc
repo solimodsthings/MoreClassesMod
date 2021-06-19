@@ -27,7 +27,10 @@ var RPGTacCharacterClass PeacekeeperClass;
 var RPGTacCharacterClass_LevelUpCard BishopCard;
 
 // Recipes
-var RPGTacSupply_CraftingRecipeEquipment PeacekeeperTanegashimaRecipe;
+var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber1Recipe;
+var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber2Recipe;
+var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber3Recipe;
+
 
 DefaultProperties
 {
@@ -55,5 +58,7 @@ DefaultProperties
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'
 
     // Recipes
-    PeacekeeperTanegashimaRecipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Tanegashima'
+    HeavyCaliber1Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Blunderbuss'
+    HeavyCaliber2Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Arquebus'
+    HeavyCaliber3Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Tanegashima'
 }
