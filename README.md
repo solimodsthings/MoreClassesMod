@@ -9,18 +9,17 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 
 # Classes 
 
-<b>Added as of v0.1</b>
-- Moon Sage
-- Strategist
-- Mercenary
-- Bishop
+<b>Added as of v0.2</b>
+- Moon Sage, a specialization of Mages
+- Strategist, a specialization of Students
+- Mercenary, a specialization of Adventurers
+- Bishop, a specialization of Clerics
+- Luminary, an advanced class for characters that have cross-trained Knight and Mage
+- Guardian, a class specializing in lance defense and countering Illusionist debuffs
+- Peacekeeper, a specialization of Gunners that use conjured ammunition and artillery magic
 
 ([Check out the full class descriptions here](https://github.com/solimodsthings/MoreClassesMod/wiki).)
 
-<b>Planned for Next Release (v0.2)</b>
-- Luminary
-- Guardian
-- Peacekeeper
 
 # Mod Dependencies and Compatiblity
 This mod relies on Events Mod and is compatible with other mods that use Events Mod. Please ensure Events Mod is loaded before this mod. See installation steps further below.
@@ -43,7 +42,7 @@ MutatorsLoaded=EventsMod.EventsModStart,MoreClassesMod.MoreClassesModStart
 
 # What exactly am I installing?
 - [EventsMod.u](https://github.com/solimodsthings/EventsMod) – this is a utility mod that replaces the game’s base PlayerController class with an identical one that is observable. The observable PlayerController generates events that other mods can listen to. This mod does not add content, but is a requirement for More Classes Mod to work.
-- MoreClassesMod.u – this contains logic that unlocks classes for characters that meet the requirements. It is also in charge of ensuring that new classes can equip weapons and armor from the base game properly.
+- MoreClassesMod.u – this unlocks classes for characters that meet the requirements, ensure new classes can equip weapons and armor from the base game properly, and adds new recipes to base game shopkeeper inventories
 - MoreClassesModContent.upk – this is where new classes, abilities, cards, and status effects are defined. 
 - MoreClassesModContent.int – this is where the names and descriptions of classes, abilities, etc. are defined.
 
