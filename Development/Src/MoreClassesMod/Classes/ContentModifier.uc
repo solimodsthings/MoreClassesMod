@@ -1,5 +1,7 @@
 // [More Classes Mod for Himeko Sutori (2021)]
 
+// This is a convenient base class for other modifier classes
+// to inherit from.
 class ContentModifier extends EventListener
     placeable;
 
@@ -30,7 +32,6 @@ var RPGTacCharacterClass_LevelUpCard BishopCard;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber1Recipe;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber2Recipe;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber3Recipe;
-
 
 DefaultProperties
 {

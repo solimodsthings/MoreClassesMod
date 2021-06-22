@@ -1,3 +1,7 @@
+// [More Classes Mod for Himeko Sutori (2021)]
+
+// This class updates base game shop inventories and makes
+// new recipes available to players.
 class ShopModifier extends ContentModifier
     Dependson(RPGTacSupply_CraftingRecipe)
     Dependson(RPGTacSupply);
@@ -9,16 +13,12 @@ function OnInitialization(EventManager Manager)
     self.Parent = Manager;
 }
 
+// We're handling shop events here instead of OnEnterArea() because
+// it's not guaranteed that RPGTacKismentOpenShop instances will exist
+// immediately after entering the area. If this causes performance issues,
+// I suppose we could try OnEnterArea() again but with a timed delay.
 function OnCauseEvent(optional Name event)
 {
-    // local RPGTacKismetOpenShop Shop;
-
-    // `log("OnCauseEvent(): " $ event);
-
-    // We're handling shop events here instead of OnEnterArea() because
-    // it's not guaranteed that RPGTacKismentOpenShop instances will exist
-    // immediately after entering the area. If this causes performance issues,
-    // I suppose we could try OnEnterArea() again but with a timed delay.
     if((IsCurrentLevel('Main_Desert_Ramliyah') && event == 'TalkToNabil'))
     {
         AddRecipesToShop('RPGTacKismetOpenShop_6'); // Nabil's shop in Ramliyah
@@ -40,19 +40,13 @@ function OnCauseEvent(optional Name event)
 private function AddRecipesToShop(Name shopname)
 {
     local RPGTacKismetOpenShop Shop;
-    Shop = GetShop(shopname); // Nabil's shop
+    Shop = GetShop(shopname);
     if(Shop != none)
     {
         AddRecipe(Shop, HeavyCaliber1Recipe);
         AddRecipe(Shop, HeavyCaliber2Recipe);
         AddRecipe(Shop, HeavyCaliber3Recipe);
     }
-}
-
-// Called whenever the player enters an area that is not a world map
-function OnEnterArea() 
-{       
-    // `log("OnEnterArea()");
 }
 
 function AddRecipe(RPGTacKismetOpenShop Shop, RPGTacSupply_CraftingRecipe Recipe)
@@ -125,16 +119,3 @@ DefaultProperties
 {
 
 }
-
-
-/*
-foreach Parent.World.AllPawns(class'RPGTacPawn_NPC', TargetNpc)
-{
-    `log(TargetNpc);
-}
-
-foreach Parent.World.AllActors(class'Actor', TargetActor)
-{
-    `log(TargetActor);
-}
-*/
