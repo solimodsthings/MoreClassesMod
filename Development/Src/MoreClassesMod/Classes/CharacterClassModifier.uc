@@ -13,6 +13,7 @@ var EventManager ParentPlayerController;
 function OnInitialization(EventManager Manager)
 {
     self.ParentPlayerController = Manager;
+    self.Id = "MoreClasses.CharacterClassModifier";
     AddCardArchetype(ClericClass, BishopCard);
 }
 

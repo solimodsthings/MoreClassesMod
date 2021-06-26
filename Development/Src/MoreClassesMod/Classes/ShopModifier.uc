@@ -11,6 +11,7 @@ var EventManager Parent;
 function OnInitialization(EventManager Manager) 
 {
     self.Parent = Manager;
+    self.Id = "MoreClasses.ShopModifier";
 }
 
 // We're handling shop events here instead of OnEnterArea() because
