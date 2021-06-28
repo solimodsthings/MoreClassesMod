@@ -8,12 +8,13 @@ class CharacterClassModifier extends ContentModifier
     dependson(EventManager)
     dependson(RPGTacGame);
 
-var EventManager ParentPlayerController;
-
-function OnInitialization(EventManager Manager)
+DefaultProperties
 {
-    self.ParentPlayerController = Manager;
-    self.Id = "MoreClasses.CharacterClassModifier";
+    Id = "MoreClasses.CharacterClassModifier"
+}
+
+function OnInitialization()
+{
     AddCardArchetype(ClericClass, BishopCard);
 }
 
@@ -36,7 +37,7 @@ function OnPawnLevelUp(RPGTacPawn TargetPawn)
     // Mage specific stuff
     if(IsClass(TargetPawn.CharacterClasses[TargetPawn.CurrentCharacterClass], MageClass))
     {
-        GameTime = ParentPlayerController.Game.GameTime;       
+        GameTime = Manager.Game.GameTime;       
 
         if(GameTime < 5 || GameTime >= 19 )
         {
@@ -140,7 +141,7 @@ private function UnlockClass(RPGTacPawn TargetPawn, RPGTacCharacterClass NewArch
     {
         // `log('Pawn ' $ targetPawn.CharacterName $ ' unlocked class ' $ NewArchetypeClass.ClassName);
         TargetPawn.CharacterClassArchetypes.AddItem(NewArchetypeClass);
-        NewCharacterClassInstance = ParentPlayerController.SpawnCharacterClassInstance(NewArchetypeClass);
+        NewCharacterClassInstance = Manager.SpawnCharacterClassInstance(NewArchetypeClass);
         NewCharacterClassInstance.Initialize();
         TargetPawn.CharacterClasses.AddItem(NewCharacterClassInstance);
     }
