@@ -6,12 +6,9 @@ class ShopModifier extends ContentModifier
     Dependson(RPGTacSupply_CraftingRecipe)
     Dependson(RPGTacSupply);
 
-var EventManager Parent;
-
-function OnInitialization(EventManager Manager) 
+DefaultProperties
 {
-    self.Parent = Manager;
-    self.Id = "MoreClasses.ShopModifier";
+    Id = "MoreClasses.ShopModifier"
 }
 
 // We're handling shop events here instead of OnEnterArea() because
@@ -78,12 +75,12 @@ function bool ContainsRecipe(RPGTacKismetOpenShop Shop, RPGTacSupply_CraftingRec
 function bool IsCurrentLevel(Name packageName)
 {
     local int i;
-    for(i = 0; i < Parent.World.StreamingLevels.Length; i++)
+    for(i = 0; i < Manager.World.StreamingLevels.Length; i++)
     {
-        if (Parent.World.StreamingLevels[i] != None && (Parent.World.StreamingLevels[i].bIsVisible || Parent.World.StreamingLevels[i].bHasLoadRequestPending))
+        if (Manager.World.StreamingLevels[i] != None && (Manager.World.StreamingLevels[i].bIsVisible || Manager.World.StreamingLevels[i].bHasLoadRequestPending))
         {
-            // `log("Comparing " $ packageName $ " and " $ Parent.World.StreamingLevels[i].PackageName);
-            if(packageName == Parent.World.StreamingLevels[i].PackageName)
+            // `log("Comparing " $ packageName $ " and " $ Manager.World.StreamingLevels[i].PackageName);
+            if(packageName == Manager.World.StreamingLevels[i].PackageName)
             {
                 // `log("IsCurrentLevel() evaluated to true");
                 return true;
@@ -100,7 +97,7 @@ function RPGTacKismetOpenShop GetShop(Name ShopName)
     local int i;
     local array<SequenceObject> Events;
 
-    GameSequence = Parent.World.GetGameSequence();
+    GameSequence = Manager.World.GetGameSequence();
     GameSequence.FindSeqObjectsByClass(class'RPGTacKismetOpenShop', TRUE, Events);
 
     // `log("Finding whether shop exists or not... events length is " $ Events.Length);
@@ -114,9 +111,4 @@ function RPGTacKismetOpenShop GetShop(Name ShopName)
     }
 
     return none;
-}
-
-DefaultProperties 
-{
-
 }

@@ -9,5 +9,4 @@ function OnEventManagerCreated(EventManager Manager)
 	Manager.AddListener(new class'ShopModifier');
 	Manager.World = WorldInfo; // TODO: Should this call be done by EventsMod?
 	Manager.Game = RPGTacGame(WorldInfo.Game);
-	`log("MOD LOADED: More Classes");
 }

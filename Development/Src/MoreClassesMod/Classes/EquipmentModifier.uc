@@ -6,9 +6,9 @@
 class EquipmentModifier extends ContentModifier
     dependson(RPGTacSupply_CraftingRecipe);
 
-function OnInitialization(EventManager Manager)
+DefaultProperties
 {
-    self.Id = "MoreClasses.EquipmentModifier";
+    Id = "MoreClasses.EquipmentModifier";
 }
 
 // Override
