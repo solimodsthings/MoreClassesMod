@@ -28,6 +28,11 @@ function OnPawnsInitialized(Array<RPGTacPawn> Pawns)
     }
 }
 
+function OnPawnAdded(RPGTacPawn TargetPawn) 
+{
+    CheckForNewClassUnlocks(TargetPawn);
+}
+
 function OnPawnLevelUp(RPGTacPawn TargetPawn)
 {
     local float GameTime;
