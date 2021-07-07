@@ -15,6 +15,8 @@ var RPGTacCharacterClass MageClass;
 var RPGTacCharacterClass GunnerClass;
 var RPGTacCharacterClass KnightClass;
 
+var RPGTacCharacterClass SlimeClass;
+
 // Classes added by mod
 var RPGTacCharacterClass BishopClass;
 var RPGTacCharacterClass ScholarClass;
@@ -24,6 +26,9 @@ var RPGTacCharacterClass LuminaryClass;
 var RPGTacCharacterClass GuardianClass;
 var RPGTacCharacterClass DruidClass;
 var RPGTacCharacterClass PeacekeeperClass;
+
+var RPGTacCharacterClass MudbastionClass;
+var RPGTacCharacterClass SludgelordClass;
 
 // Level up cards added by mod
 var RPGTacCharacterClass_LevelUpCard BishopCard;
@@ -46,6 +51,8 @@ DefaultProperties
     DruidClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Druid'
     GunnerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Gunner'
 
+    SlimeClass=RPGTacCharacterClass'himekosutoricontent.CharacterClasses.Monster_CharacterClass_Slime'
+
     // Classes added by mod
     BishopClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Bishop'
     ScholarClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Scholar'
@@ -54,6 +61,11 @@ DefaultProperties
     LuminaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Luminary'
     GuardianClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Guardian'
     PeacekeeperClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Peacekeeper'
+
+    MudbastionClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Mudbastion'
+    SludgelordClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Sludgelord'
+
+
 
     // Level up cards added by mod
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'

@@ -92,6 +92,12 @@ private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
         UnlockClass(TargetPawn, PeacekeeperClass);
     }
 
+    if(HasClassInstanceLevel(TargetPawn, SlimeClass, 5))
+    {
+        UnlockClass(TargetPawn, MudbastionClass);
+        UnlockClass(TargetPawn, SludgelordClass);
+    }
+
 }
 
 // This is used if a new class can only be unlocked by acquiring a level card that is 
