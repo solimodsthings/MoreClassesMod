@@ -19,7 +19,6 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 - [Peacekeeper](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization of Gunners that use conjured ammunition and artillery magic
 - [Mudbastion](https://github.com/solimodsthings/MoreClassesMod/wiki), a tanky specialization for Slimes 
 - [Sludgelord](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes that has access to a ranged attack
-([Check out the full class descriptions here](https://github.com/solimodsthings/MoreClassesMod/wiki).)
 
 <b>Planned for release v0.4</b>
 - [Ironfey](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
