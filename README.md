@@ -9,17 +9,27 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 
 # Classes 
 
-<b>Added as of v0.2</b>
-- Moon Sage, a specialization of Mages
-- Strategist, a specialization of Students
-- Mercenary, a specialization of Adventurers
-- Bishop, a specialization of Clerics
-- Luminary, an advanced class for characters that have cross-trained Knight and Mage
-- Guardian, a class specializing in lance defense and countering Illusionist debuffs
-- Peacekeeper, a specialization of Gunners that use conjured ammunition and artillery magic
+<b>Currently added by this mod:</b>
+- [Moon Sage](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Mages
+- [Strategist](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Students
+- [Mercenary](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Adventurers
+- [Bishop](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Clerics
+- [Luminary](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for characters that have cross-trained Knight and Mage
+- [Guardian](https://github.com/solimodsthings/MoreClassesMod/wiki), a class specializing in lance defense and countering Illusionist debuffs
+- [Peacekeeper](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization of Gunners that use conjured ammunition and artillery magic
 
 ([Check out the full class descriptions here](https://github.com/solimodsthings/MoreClassesMod/wiki).)
 
+<b>Planned for release v0.3</b>
+- [Mudbastion](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes
+- [Sludgelord](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes
+
+<b>Planned for release v0.4</b>
+- [Ironfey](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
+- [Sylph](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
+
+<b>Planned for release v0.5</b>
+- [Gladiator](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for Warriors and unlocked after completing question "The Gladiator"
 
 # Mod Dependencies and Compatiblity
 This mod relies on Events Mod and is compatible with other mods that use Events Mod. Please ensure Events Mod is loaded before this mod. See installation steps further below.
