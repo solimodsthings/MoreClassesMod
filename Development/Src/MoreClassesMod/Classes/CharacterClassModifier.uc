@@ -5,7 +5,7 @@
 // if new classes are unlocked the normally through a
 // level up card.
 class CharacterClassModifier extends ContentModifier
-    dependson(EventManager)
+    dependson(CorePlayerController)
     dependson(RPGTacGame);
 
 DefaultProperties
@@ -42,7 +42,7 @@ function OnPawnLevelUp(RPGTacPawn TargetPawn)
     // Mage specific stuff
     if(IsClass(TargetPawn.CharacterClasses[TargetPawn.CurrentCharacterClass], MageClass))
     {
-        GameTime = Manager.Game.GameTime;       
+        GameTime = Core.Game.GameTime;       
 
         if(GameTime < 5 || GameTime >= 19 )
         {
@@ -152,7 +152,8 @@ private function UnlockClass(RPGTacPawn TargetPawn, RPGTacCharacterClass NewArch
     {
         // `log('Pawn ' $ targetPawn.CharacterName $ ' unlocked class ' $ NewArchetypeClass.ClassName);
         TargetPawn.CharacterClassArchetypes.AddItem(NewArchetypeClass);
-        NewCharacterClassInstance = Manager.SpawnCharacterClassInstance(NewArchetypeClass);
+        //NewCharacterClassInstance = Core.SpawnCharacterClassInstance(NewArchetypeClass);
+        NewCharacterClassInstance = Core.Spawn(class'RPGTacCharacterClass',,,,,NewArchetypeClass);
         NewCharacterClassInstance.Initialize();
         TargetPawn.CharacterClasses.AddItem(NewCharacterClassInstance);
     }

@@ -1,12 +1,10 @@
 // [More Classes Mod for Himeko Sutori (2021)]
 
-class MoreClassesModStart extends EventMutator;
+class MoreClassesModStart extends ModStart;
 
-function OnEventManagerCreated(EventManager Manager)
+function OnStart(CorePlayerController Core)
 {
-	Manager.AddListener(new class'CharacterClassModifier');
-	Manager.AddListener(new class'EquipmentModifier');
-	Manager.AddListener(new class'ShopModifier');
-	Manager.World = WorldInfo; // TODO: Should this call be done by EventsMod?
-	Manager.Game = RPGTacGame(WorldInfo.Game);
+	Core.AddPlugin(new class'CharacterClassModifier');
+	Core.AddPlugin(new class'EquipmentModifier');
+	Core.AddPlugin(new class'ShopModifier');
 }

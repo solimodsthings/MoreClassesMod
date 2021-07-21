@@ -2,7 +2,7 @@
 
 // This is a convenient base class for other modifier classes
 // to inherit from.
-class ContentModifier extends EventListener
+class ContentModifier extends Plugin
     placeable;
 
 // Part of original game

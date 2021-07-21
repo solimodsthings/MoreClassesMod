@@ -75,12 +75,12 @@ function bool ContainsRecipe(RPGTacKismetOpenShop Shop, RPGTacSupply_CraftingRec
 function bool IsCurrentLevel(Name packageName)
 {
     local int i;
-    for(i = 0; i < Manager.World.StreamingLevels.Length; i++)
+    for(i = 0; i < Core.World.StreamingLevels.Length; i++)
     {
-        if (Manager.World.StreamingLevels[i] != None && (Manager.World.StreamingLevels[i].bIsVisible || Manager.World.StreamingLevels[i].bHasLoadRequestPending))
+        if (Core.World.StreamingLevels[i] != None && (Core.World.StreamingLevels[i].bIsVisible || Core.World.StreamingLevels[i].bHasLoadRequestPending))
         {
-            // `log("Comparing " $ packageName $ " and " $ Manager.World.StreamingLevels[i].PackageName);
-            if(packageName == Manager.World.StreamingLevels[i].PackageName)
+            // `log("Comparing " $ packageName $ " and " $ Core.World.StreamingLevels[i].PackageName);
+            if(packageName == Core.World.StreamingLevels[i].PackageName)
             {
                 // `log("IsCurrentLevel() evaluated to true");
                 return true;
@@ -97,7 +97,7 @@ function RPGTacKismetOpenShop GetShop(Name ShopName)
     local int i;
     local array<SequenceObject> Events;
 
-    GameSequence = Manager.World.GetGameSequence();
+    GameSequence = Core.World.GetGameSequence();
     GameSequence.FindSeqObjectsByClass(class'RPGTacKismetOpenShop', TRUE, Events);
 
     // `log("Finding whether shop exists or not... events length is " $ Events.Length);
