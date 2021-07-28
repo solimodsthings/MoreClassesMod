@@ -5,7 +5,7 @@ This is a mod for [Himeko Sutori](https://himekosutori.com/) that adds new unloc
 
 The mod is designed to work with existing save files. Create a backup of your save file if you choose to use this mod in the middle of an existing campaign. 
 
-More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://github.com/solimodsthings/EventsMod).
+More Classes Mod depends on another Himeko Sutori mod, [CoreMod](https://github.com/solimodsthings/CoreMod).
 
 # Classes 
 
@@ -28,29 +28,28 @@ More Classes Mod depends on another Himeko Sutori mod, [Events Mod](https://gith
 - [Gladiator](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for Warriors and unlocked after completing question "The Gladiator"
 
 # Mod Dependencies and Compatiblity
-This mod relies on Events Mod and is compatible with other mods that use Events Mod. Please ensure Events Mod is loaded before this mod. See installation steps further below.
-Because this mod uses Events Mod, it is not compatible with other mods that replace the game’s player controller. 
+This mod relies on CoreMod and is compatible with other mods that use CoreMod. Please ensure CoreMod is loaded before this mod. See installation steps further below.
 
 # How do I install this mod?
 1.  [Download the mod files from the releases page](https://github.com/solimodsthings/MoreClassesMod/releases) to your PC
 1.	Open your Himeko Sutori steam folder by right-clicking on the game in Steam and choosing Manage > Browser Local Files.
-2.	Place files <i>EventsMod.u</i> and <i>MoreClassesMod.u</i> in folder <b>…/Himeko Sutori/RPGTacGame/Script/</b>
+2.	Place files <i>CoreMod.u</i> and <i>MoreClassesMod.u</i> in folder <b>…/Himeko Sutori/RPGTacGame/Script/</b>
 3.	Place file <i>MoreClassesModContent.upk</i> in folder <b>…/Himeko Sutori/RPGTacGame/Content/</b>
 4.	Place file <i>MoreClassesModContent.int</i> in folder <b>…/Himeko Sutori/RPGTacGame/Localization/INT/</b>
 5.	Update file <b>…/Himeko Sutori/RPGTacGame/Config/RPGTacMods.ini</b> so the mod is loaded whenever you start the game – the file should look like this:
 
 ```
 [rpgtacgame.RPGTacMutatorLoader]
-MutatorsLoaded=EventsMod.EventsModStart,MoreClassesMod.MoreClassesModStart
+MutatorsLoaded=CoreMod.CoreStart,MoreClassesMod.MoreClassesModStart
 ```
 
 (Note: Make sure there are no spaces in the mod list as whitespaces don’t get trimmed!)
 
 # What exactly am I installing?
-- [EventsMod.u](https://github.com/solimodsthings/EventsMod) – this is a utility mod that replaces the game’s base PlayerController class with an identical one that is observable. The observable PlayerController generates events that other mods can listen to. This mod does not add content, but is a requirement for More Classes Mod to work.
-- MoreClassesMod.u – this unlocks classes for characters that meet the requirements, ensure new classes can equip weapons and armor from the base game properly, and adds new recipes to base game shopkeeper inventories
-- MoreClassesModContent.upk – this is where new classes, abilities, cards, and status effects are defined. 
-- MoreClassesModContent.int – this is where the names and descriptions of classes, abilities, etc. are defined.
+- [CoreMod.u](https://github.com/solimodsthings/CoreMod) – this is a dependency that allows this the More Classes Mod to listen on game events (eg. characters levelling up) and be compatible with other mods
+- MoreClassesMod.u – this handles unlocking classes for characters that meet requirements, ensuring new classes can equip weapons and armor from the base game properly, and adding new recipes to base game shopkeeper inventories
+- MoreClassesModContent.upk – this is where the definitions of classes, abilities, cards, and status effects live
+- MoreClassesModContent.int – this is where the names and descriptions of classes, abilities, etc. live
 
 # Special Thanks
 Special thanks to Nathaniel who took time to help me understand how UDK and modding works in his game!
