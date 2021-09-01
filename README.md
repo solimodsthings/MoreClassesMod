@@ -31,25 +31,7 @@ More Classes Mod depends on another Himeko Sutori mod, [CoreMod](https://github.
 This mod relies on CoreMod and is compatible with other mods that use CoreMod. Please ensure CoreMod is loaded before this mod. See installation steps further below.
 
 # How do I install this mod?
-1.  [Download the mod files from the releases page](https://github.com/solimodsthings/MoreClassesMod/releases) to your PC
-1.	Open your Himeko Sutori steam folder by right-clicking on the game in Steam and choosing Manage > Browser Local Files.
-2.	Place files <i>CoreMod.u</i> and <i>MoreClassesMod.u</i> in folder <b>…/Himeko Sutori/RPGTacGame/Script/</b>
-3.	Place file <i>MoreClassesModContent.upk</i> in folder <b>…/Himeko Sutori/RPGTacGame/Content/</b>
-4.	Place file <i>MoreClassesModContent.int</i> in folder <b>…/Himeko Sutori/RPGTacGame/Localization/INT/</b>
-5.	Update file <b>…/Himeko Sutori/RPGTacGame/Config/RPGTacMods.ini</b> so the mod is loaded whenever you start the game – the file should look like this:
-
-```
-[rpgtacgame.RPGTacMutatorLoader]
-MutatorsLoaded=CoreMod.CoreStart,MoreClassesMod.MoreClassesModStart
-```
-
-(Note: Make sure there are no spaces in the mod list as whitespaces don’t get trimmed!)
-
-# What exactly am I installing?
-- [CoreMod.u](https://github.com/solimodsthings/CoreMod) – this is a dependency that allows this the More Classes Mod to listen on game events (eg. characters levelling up) and be compatible with other mods
-- MoreClassesMod.u – this handles unlocking classes for characters that meet requirements, ensuring new classes can equip weapons and armor from the base game properly, and adding new recipes to base game shopkeeper inventories
-- MoreClassesModContent.upk – this is where the definitions of classes, abilities, cards, and status effects live
-- MoreClassesModContent.int – this is where the names and descriptions of classes, abilities, etc. live
+This mod is now available in the Himeko Sutori Steam Workshop! Subscribe to the mod and then enable it in the mod loader.
 
 # Special Thanks
 Special thanks to Nathaniel who took time to help me understand how UDK and modding works in his game!
