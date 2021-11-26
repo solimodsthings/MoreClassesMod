@@ -20,11 +20,11 @@ More Classes Mod depends on another Himeko Sutori mod, [CoreMod](https://github.
 - [Mudbastion](https://github.com/solimodsthings/MoreClassesMod/wiki), a tanky specialization for Slimes 
 - [Sludgelord](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes that has access to a ranged attack
 
-<b>Planned for release v0.4</b>
+<b>Planned for release v0.5</b>
 - [Ironfey](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
 - [Sylph](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
 
-<b>Planned for release v0.5</b>
+<b>Planned for release v0.6</b>
 - [Gladiator](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for Warriors and unlocked after completing question "The Gladiator"
 
 # Mod Dependencies and Compatiblity
