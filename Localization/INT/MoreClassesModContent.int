@@ -1,5 +1,5 @@
 ; ------ More Classes Mod for Himeko Sutori ------
-
+;
 
 ; ------ Classes ------
 
@@ -11,7 +11,7 @@ MasterLocalized="Master"
 [CharacterClasses.CharacterClass_MoonSage RPGTacCharacterClass]
 ClassName_Localized="Moon Sage"
 ClassDescription_Localized="There are several distinct orders of mages in the world. Moon Sages are such an order known for worshipping a goddess of the night sky. It is not known whether this order legitimately derives power from the moon, but their value in combat is unquestionable.\n\n(This hidden class is unlocked when a Mage gains a level-up at night time.)"
-MasterLocalized="Master"
+MasterLocalized="Elder"
 
 [CharacterClasses.CharacterClass_Scholar RPGTacCharacterClass]
 ClassName_Localized="Strategist"
@@ -33,15 +33,25 @@ ClassName_Localized="Guardian"
 ClassDescription_Localized="Guardians are specialized support units who protect groups of allies through area of effect buffs. They are especially effective at mitigating negative status effects caused by enemy Illusionists.\n\n(This hidden class is unlocked after reaching character level 15, Druid level 5, and Cleric level 5.)"
 MasterLocalized="Master"
 
+[CharacterClasses.CharacterClass_Peacekeeper RPGTacCharacterClass]
+ClassName_Localized="Peacekeeper"
+ClassDescription_Localized="Peacekeepers are specialized Gunners who use conjured ammunition and artillery magic. Peacekeepers can only equip heavy caliber weapons which are created by re-engineering long guns. During combat, this class gains additional ranged attack from Blue, Spellcraft, and Intellect.\n\n(This hidden class is unlocked after reaching character level 15, Gunner level 5, and Mage level 5.)"
+MasterLocalized="Master"
+
+[CharacterClasses.CharacterClass_Warmaster RPGTacCharacterClass]
+ClassName_Localized="Warmaster"
+ClassDescription_Localized="Warmasters are the inevitable products of constant warfare. Their mastery over multiple weapon types and innate ability to tap into the primal energies of the universe make them formidable allies. During combat, this class restores 2% HP per defeated foe. Additionally, this class gets a melee attack bonus from Spellcraft and Spirit.\n\n(This hidden class is unlocked after reaching character level 15, Berserker level 5, and Warlock level 5.)"
+MasterLocalized="Elite"
+
 [CharacterClasses.Monster_CharacterClass_Mudbastion RPGTacCharacterClass]
 ClassName_Localized="Mudbastion"
 ClassDescription_Localized="Mudbastions are slimes that have learned to harden their outer layer when hit. Though they do not attack, they are very difficult to hurt with traditional weapons.\n\n(This hidden class is unlocked after reaching Slime level 5.)"
-MasterLocalized="Master"
+MasterLocalized="Elite"
 
 [CharacterClasses.Monster_CharacterClass_Sludgelord RPGTacCharacterClass]
 ClassName_Localized="Sludgelord"
 ClassDescription_Localized="Sludgelords are slimes that have learned to produce an odorous, magic-resistant sludge. They often like to launch their sludge at anything that moves.\n\n(This hidden class is unlocked after reaching Slime level 5.)"
-MasterLocalized="Master"
+MasterLocalized="Elite"
 
 ; ------ Cards  ------
 
@@ -136,6 +146,9 @@ ActionName_Localized="Slime Regeneration"
 [Actions.Act_Monster_SlimeRangedAttack RPGTacAction]
 ActionName_Localized="Sludgeball"
 
+[Actions.Act_ViolentStrike RPGTacAction]
+ActionName_Localized="Violent Strike"
+
 ; ------ Reactions ------
 
 [Actions.Reaction_ExamineWeakness RPGTacAction]
@@ -215,6 +228,8 @@ StatusName_Localized="Vigilant"
 [StatusEffects.Status_Voidshock RPGTacStatusEffect]
 StatusName_Localized="Voidshocked"
 
+[StatusEffects.Status_Demoralized RPGTacStatusEffect]
+StatusName_Localized="Demoralized"
 
 ; ------ Recipes -------
 
