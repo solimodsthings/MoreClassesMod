@@ -7,25 +7,7 @@ The mod is designed to work with existing save files. Create a backup of your sa
 
 More Classes Mod depends on another Himeko Sutori mod, [CoreMod](https://github.com/solimodsthings/CoreMod).
 
-# Classes 
-
-<b>Currently added by this mod:</b>
-- [Moon Sage](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Mages
-- [Strategist](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Students
-- [Mercenary](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Adventurers
-- [Bishop](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Clerics
-- [Luminary](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for characters that have cross-trained Knight and Mage
-- [Guardian](https://github.com/solimodsthings/MoreClassesMod/wiki), a class specializing in lance defense and countering Illusionist debuffs
-- [Peacekeeper](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization of Gunners that use conjured ammunition and artillery magic
-- [Mudbastion](https://github.com/solimodsthings/MoreClassesMod/wiki), a tanky specialization for Slimes 
-- [Sludgelord](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes that has access to a ranged attack
-- [Warmaster](https://github.com/solimodsthings/MoreClassesMod/wiki)
-
-<b>Planned for release v0.6</b>
-- [Hexblade](https://github.com/solimodsthings/MoreClassesMod/wiki)
-
-<b>Planned for release v0.7</b>
-- [Incinerator](https://github.com/solimodsthings/MoreClassesMod/wiki)
+[See the wiki for a list of classes added by this mod](https://github.com/solimodsthings/MoreClassesMod/wiki)
 
 # Mod Dependencies and Compatiblity
 This mod relies on CoreMod and is compatible with other mods that use CoreMod. Please ensure CoreMod is loaded before this mod. See installation steps further below.
