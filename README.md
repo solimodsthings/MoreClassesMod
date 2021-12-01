@@ -21,11 +21,13 @@ More Classes Mod depends on another Himeko Sutori mod, [CoreMod](https://github.
 - [Sludgelord](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Slimes that has access to a ranged attack
 
 <b>Planned for release v0.5</b>
-- [Ironfey](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
-- [Sylph](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
+- [Warmaster](https://github.com/solimodsthings/MoreClassesMod/wiki), a specialization for Faeries
 
 <b>Planned for release v0.6</b>
-- [Gladiator](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for Warriors and unlocked after completing question "The Gladiator"
+- [Hexblade](https://github.com/solimodsthings/MoreClassesMod/wiki), an advanced class for Warriors and unlocked after completing question "The Gladiator"
+
+<b>Planned for release v0.7</b>
+- [Incinerator](https://github.com/solimodsthings/MoreClassesMod/wiki)
 
 # Mod Dependencies and Compatiblity
 This mod relies on CoreMod and is compatible with other mods that use CoreMod. Please ensure CoreMod is loaded before this mod. See installation steps further below.
