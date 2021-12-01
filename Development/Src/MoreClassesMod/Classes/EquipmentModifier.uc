@@ -51,6 +51,7 @@ private function ModifyEquipment(RPGTacEquipment Equipment)
 {
     if(Equipment != none)
     {
+        // Source, Destination, Equipment
         Mirror(ClericClass, BishopClass, Equipment);
         Mirror(StudentClass, ScholarClass, Equipment);
         Mirror(AdventurerClass, MercenaryClass, Equipment);
@@ -59,9 +60,11 @@ private function ModifyEquipment(RPGTacEquipment Equipment)
         Mirror(MageClass, LuminaryClass, Equipment);
         Mirror(KnightClass, LuminaryClass, Equipment);
         Mirror(DruidClass, GuardianClass, Equipment);
+        Mirror(BerserkerClass, WarmasterClass, Equipment);
+        Mirror(KnightClass, WarmasterClass, Equipment);
         Mirror(SlimeClass, MudbastionClass, Equipment);
         Mirror(SlimeClass, SludgelordClass, Equipment);
-
+        
         if(RPGTacEquipmentMainHand(Equipment) == none) // only mirror armor
         {
             Mirror(GunnerClass, PeacekeeperClass, Equipment);
