@@ -14,6 +14,8 @@ var RPGTacCharacterClass CadetClass;
 var RPGTacCharacterClass MageClass;
 var RPGTacCharacterClass GunnerClass;
 var RPGTacCharacterClass KnightClass;
+var RPGTacCharacterClass BerserkerClass;
+var RPGTacCharacterClass WarlockClass;
 
 var RPGTacCharacterClass SlimeClass;
 
@@ -26,6 +28,7 @@ var RPGTacCharacterClass LuminaryClass;
 var RPGTacCharacterClass GuardianClass;
 var RPGTacCharacterClass DruidClass;
 var RPGTacCharacterClass PeacekeeperClass;
+var RPGTacCharacterClass WarmasterClass;
 
 var RPGTacCharacterClass MudbastionClass;
 var RPGTacCharacterClass SludgelordClass;
@@ -50,6 +53,9 @@ DefaultProperties
     KnightClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Knight'
     DruidClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Druid'
     GunnerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Gunner'
+    BerserkerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Berserker'
+    WarlockClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Warlock'
+    
 
     SlimeClass=RPGTacCharacterClass'himekosutoricontent.CharacterClasses.Monster_CharacterClass_Slime'
 
@@ -61,13 +67,12 @@ DefaultProperties
     LuminaryClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Luminary'
     GuardianClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Guardian'
     PeacekeeperClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Peacekeeper'
+    WarmasterClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Warmaster'
 
     MudbastionClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Mudbastion'
     SludgelordClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Sludgelord'
 
-
-
-    // Level up cards added by mod
+    // Level up cards added by mod that need to be inserted into a base class's deck
     BishopCard=RPGTacCharacterClass_LevelUpCard'MoreClassesModContent.LevelUpCards.Card_Class_Bishop'
 
     // Recipes

@@ -8,9 +8,14 @@ class CharacterClassModifier extends ContentModifier
     dependson(CorePlayerController)
     dependson(RPGTacGame);
 
+var int DefeatedEnemiesCurrentTurn;
+var int DefeatedEnemiesTotal;
+
 DefaultProperties
 {
     Id = "MoreClasses.CharacterClassModifier"
+    DefeatedEnemiesCurrentTurn = 0
+    DefeatedEnemiesTotal = 0
 }
 
 function OnInitialization()
@@ -54,6 +59,114 @@ function OnPawnLevelUp(RPGTacPawn TargetPawn)
 
 }
 
+function OnPawnDefeated(RPGTacPawn DefeatedPawn, bool IsAlly) 
+{
+    if(!IsAlly)
+    {
+        DefeatedEnemiesCurrentTurn++;
+        DefeatedEnemiesTotal++;
+    }
+}
+
+function OnBattleTurnStart() 
+{
+    local RPGTacSquad Squad;
+    local RPGTacPawn Pawn;
+    local RPGTacCharacterClass CharacterClass;
+    
+    foreach Core.DeployedSquads(Squad)
+    {
+        foreach Squad.Pawns(Pawn)
+        {
+            CharacterClass = Pawn.CharacterClasses[Pawn.CurrentCharacterClass];
+
+            if(IsClass(CharacterClass, WarmasterClass))
+            {
+                if(DefeatedEnemiesCurrentTurn > 0)
+                {
+                    Pawn.RPGTacTakeDamage(int(DefeatedEnemiesCurrentTurn * (Pawn.MaxHitPoints * 0.02)), "Healing", false);
+                }
+                
+            }
+        }
+    }
+
+    DefeatedEnemiesCurrentTurn = 0;
+}
+
+function OnBattleStart() 
+{
+    AddHybridClassBuffs();
+
+    DefeatedEnemiesCurrentTurn = 0;
+    DefeatedEnemiesTotal = 0;
+}
+
+
+function OnBattleFirstTurnStart() 
+{
+    //DEBUG
+}
+
+function OnBattleVictory(bool celebrate)
+{
+    RemoveHybridClassBuffs();
+}
+
+function OnBattleRetreatAll()
+{
+    RemoveHybridClassBuffs();
+}
+
+private function AddHybridClassBuffs()
+{
+    local RPGTacSquad Squad;
+    local RPGTacPawn Pawn;
+    local RPGTacCharacterClass CharacterClass;
+    
+    //foreach Core.DeployedSquads(Squad) // Can't tell what's been deployed until first turn
+    foreach Core.Squads(Squad)
+    {
+        foreach Squad.Pawns(Pawn)
+        {
+            CharacterClass = Pawn.CharacterClasses[Pawn.CurrentCharacterClass];
+
+            if(IsClass(CharacterClass, PeacekeeperClass))
+            {
+                Pawn.TempRangedAttackBonus += Pawn.Blue + Pawn.Spellcraft + Pawn.Intellect;
+                Pawn.CalculateDefaultActionPower(); // So the ranged power value in HUD takes into account temp ranged attack
+            }
+            else if(IsClass(CharacterClass, WarmasterClass))
+            {
+                Pawn.TempPhysicalAttackBonus += Pawn.Spirit + Pawn.Spellcraft;
+                Pawn.CalculateDefaultActionPower();
+            }
+            
+        }
+    }
+}
+
+private function RemoveHybridClassBuffs()
+{
+    local RPGTacSquad Squad;
+    local RPGTacPawn Pawn;
+    local RPGTacCharacterClass CharacterClass;
+
+    foreach Core.Squads(Squad)
+    {
+        foreach Squad.Pawns(Pawn)
+        {
+            CharacterClass = Pawn.CharacterClasses[Pawn.CurrentCharacterClass];
+            if(IsClass(CharacterClass, PeacekeeperClass)
+               || IsClass(CharacterClass, WarmasterClass))
+            {
+                Pawn.ClearStatusEffects();
+                Pawn.CalculateDefaultActionPower();
+            }
+        }
+    }
+}
+
 // Only called on savestate load and when a level up is detected
 private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
 {
@@ -90,6 +203,13 @@ private function CheckForNewClassUnlocks(RPGTacPawn TargetPawn)
         && AtLeastLevel(TargetPawn, 15))
     {
         UnlockClass(TargetPawn, PeacekeeperClass);
+    }
+
+    if(HasClassInstanceLevel(TargetPawn, BerserkerClass, 5)
+        && HasClassInstanceLevel(TargetPawn, WarlockClass, 5)
+        && AtLeastLevel(TargetPawn, 15))
+    {
+        UnlockClass(TargetPawn, WarmasterClass);
     }
 
     if(HasClassInstanceLevel(TargetPawn, SlimeClass, 5))
