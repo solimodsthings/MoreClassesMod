@@ -7,4 +7,5 @@ function OnStart(CorePlayerController Core)
 	Core.AddPlugin(new class'CharacterClassModifier');
 	Core.AddPlugin(new class'EquipmentModifier');
 	Core.AddPlugin(new class'ShopModifier');
+	Core.AddPlugin(new class'BattleModifier');
 }

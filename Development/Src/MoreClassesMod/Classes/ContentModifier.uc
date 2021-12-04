@@ -16,6 +16,7 @@ var RPGTacCharacterClass GunnerClass;
 var RPGTacCharacterClass KnightClass;
 var RPGTacCharacterClass BerserkerClass;
 var RPGTacCharacterClass WarlockClass;
+var RPGTacCharacterClass RogueClass;
 
 var RPGTacCharacterClass SlimeClass;
 
@@ -29,6 +30,7 @@ var RPGTacCharacterClass GuardianClass;
 var RPGTacCharacterClass DruidClass;
 var RPGTacCharacterClass PeacekeeperClass;
 var RPGTacCharacterClass WarmasterClass;
+var RPGTacCharacterClass HexbladeClass;
 
 var RPGTacCharacterClass MudbastionClass;
 var RPGTacCharacterClass SludgelordClass;
@@ -40,6 +42,14 @@ var RPGTacCharacterClass_LevelUpCard BishopCard;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber1Recipe;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber2Recipe;
 var RPGTacSupply_CraftingRecipeEquipment HeavyCaliber3Recipe;
+
+// Status Effects
+var RPGTacStatusEffect BloodCurseStatusEffect;
+
+protected function bool IsClass(RPGTacCharacterClass TargetClassInstance, RPGTacCharacterClass CharacterClassArchetype)
+{
+    return RPGTacCharacterClass(TargetClassInstance.ObjectArchetype).ClassName == CharacterClassArchetype.ClassName;
+}
 
 DefaultProperties
 {
@@ -55,6 +65,7 @@ DefaultProperties
     GunnerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Gunner'
     BerserkerClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Berserker'
     WarlockClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Warlock'
+    RogueClass=RPGTacCharacterClass'HimekoSutoriContent.CharacterClasses.CharacterClass_Rogue'
     
 
     SlimeClass=RPGTacCharacterClass'himekosutoricontent.CharacterClasses.Monster_CharacterClass_Slime'
@@ -68,6 +79,7 @@ DefaultProperties
     GuardianClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Guardian'
     PeacekeeperClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Peacekeeper'
     WarmasterClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Warmaster'
+    HexbladeClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.CharacterClass_Hexblade'
 
     MudbastionClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Mudbastion'
     SludgelordClass=RPGTacCharacterClass'MoreClassesModContent.CharacterClasses.Monster_CharacterClass_Sludgelord'
@@ -79,4 +91,7 @@ DefaultProperties
     HeavyCaliber1Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Blunderbuss'
     HeavyCaliber2Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Arquebus'
     HeavyCaliber3Recipe=RPGTacSupply_CraftingRecipeEquipment'MoreClassesModContent.Recipes.Recipe_Peacekeeper_Tanegashima'
+
+    // Statuses
+    BloodCurseStatusEffect=RPGTacStatusEffect'MoreClassesModContent.StatusEffects.Status_BloodCurse'
 }
