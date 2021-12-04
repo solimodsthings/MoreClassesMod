@@ -43,6 +43,11 @@ ClassName_Localized="Warmaster"
 ClassDescription_Localized="Warmasters are the inevitable products of constant warfare. Their mastery over multiple weapon types and innate ability to tap into the primal energies of the universe make them formidable allies. During combat, this class restores 2% HP per defeated foe. Additionally, this class gets a melee attack bonus from Spellcraft and Spirit.\n\n(This hidden class is unlocked after reaching character level 15, Berserker level 5, and Warlock level 5.)"
 MasterLocalized="Elite"
 
+[CharacterClasses.CharacterClass_Hexblade RPGTacCharacterClass]
+ClassName_Localized="Hexblade"
+ClassDescription_Localized="Hexblades use the forgotten art of blood magic to decimate foes. A single strike from a Hexblade can mean certain death for an entire squad. During combat, this class gains additional melee attack from Spellcraft and Spirit.\n\n(This hidden class is unlocked after reaching character level 15, Rogue level 5, and Warlock level 5.)"
+MasterLocalized="Master"
+
 [CharacterClasses.Monster_CharacterClass_Mudbastion RPGTacCharacterClass]
 ClassName_Localized="Mudbastion"
 ClassDescription_Localized="Mudbastions are slimes that have learned to harden their outer layer when hit. Though they do not attack, they are very difficult to hurt with traditional weapons.\n\n(This hidden class is unlocked after reaching Slime level 5.)"
@@ -149,6 +154,9 @@ ActionName_Localized="Sludgeball"
 [Actions.Act_ViolentStrike RPGTacAction]
 ActionName_Localized="Violent Strike"
 
+[Actions.Act_CursedEdge RPGTacAction]
+ActionName_Localized="Cursed Edge"
+
 ; ------ Reactions ------
 
 [Actions.Reaction_ExamineWeakness RPGTacAction]
@@ -230,6 +238,9 @@ StatusName_Localized="Voidshocked"
 
 [StatusEffects.Status_Demoralized RPGTacStatusEffect]
 StatusName_Localized="Demoralized"
+
+[StatusEffects.Status_BloodCurse RPGTacStatusEffect]
+StatusName_Localized="Blood Curse"
 
 ; ------ Recipes -------
 
