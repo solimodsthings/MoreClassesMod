@@ -9,7 +9,7 @@ class CharacterClassModifier extends ContentModifier
     dependson(RPGTacGame);
 
 DefaultProperties
-{
+{ 
     Id = "MoreClasses.CharacterClassModifier"
 }
 
